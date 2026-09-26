@@ -148,7 +148,7 @@ finally:
 ### Validação 1: Emissão do Pacote no Cliente (Celular 1)
 O pacote contendo a payload hexadecimal do protocolo foi transmitido via rádio Bluetooth RFCOMM.
 
-[![Cliente Bluetooth](docs/images/cliente_bluetooth.png)](https://github.com/mariacarlyni-pereira/MQTT-SN-forwarder-Bluetooth/blob/main/Cliente-Bluetooth.png?raw=true)
+![Cliente Bluetooth](Cliente-Bluetooth.png)
 *Figura 1: Envio do pacote no aplicativo Serial Bluetooth Terminal.*
 
 ---
@@ -156,7 +156,7 @@ O pacote contendo a payload hexadecimal do protocolo foi transmitido via rádio 
 ### Validação 2: Captura e Repasse Transparente (Celular 2)
 O script `forwarder.py` captura os 17 bytes oriundos da ponte local e realiza o repasse imediato via UDP.
 
-![Forwarder Termux](docs/images/forwarder_termux.png)
+![Forwarder Termux](Forwarder-Termux.png)
 *Figura 2: Log de execução do forwarder no Termux encaminhando os bytes.*
 
 ---
@@ -164,7 +164,7 @@ O script `forwarder.py` captura os 17 bytes oriundos da ponte local e realiza o 
 ### Validação 3: Recepção, Decodificação e Publicação no Gateway (PC)
 O `gateway.py` no PC recebe o datagrama UDP, extrai a payload `'Mensagem'` do pacote `PUBLISH` MQTT-SN e publica com sucesso no Broker Mosquitto no tópico `topico/bluetooth`.
 
-![Gateway CMD](docs/images/gateway_cmd.png)
+![Gateway CMD](Gateway-CMD.png)
 *Figura 3: Log do Gateway processando a mensagem e entregando ao Mosquitto.*
 
 ---
