@@ -148,7 +148,7 @@ finally:
 ### Validação 1: Emissão do Pacote no Cliente (Celular 1)
 O pacote contendo a payload hexadecimal do protocolo foi transmitido via rádio Bluetooth RFCOMM.
 
-![Cliente Bluetooth](docs/images/cliente_bluetooth.png)
+[![Cliente Bluetooth](docs/images/cliente_bluetooth.png)](https://github.com/mariacarlyni-pereira/MQTT-SN-forwarder-Bluetooth/blob/main/Cliente-Bluetooth.png?raw=true)
 *Figura 1: Envio do pacote no aplicativo Serial Bluetooth Terminal.*
 
 ---
