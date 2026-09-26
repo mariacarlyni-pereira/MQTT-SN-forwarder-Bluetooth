@@ -164,7 +164,7 @@ O script `forwarder.py` captura os 17 bytes oriundos da ponte local e realiza o 
 ### Validação 3: Recepção, Decodificação e Publicação no Gateway (PC)
 O `gateway.py` no PC recebe o datagrama UDP, extrai a payload `'Mensagem'` do pacote `PUBLISH` MQTT-SN e publica com sucesso no Broker Mosquitto no tópico `topico/bluetooth`.
 
-![Gateway CMD](Gateway-CMD.png)
+![Gateway CMD](Gateway.png)
 *Figura 3: Log do Gateway processando a mensagem e entregando ao Mosquitto.*
 
 ---
